@@ -1,0 +1,183 @@
+@font-face {
+  font-family: Spotify;
+  src: url("./assets/GothamMedium.ttf");
+}
+
+:root {
+  font-family: Spotify, sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  background: rgb(29, 185, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 185, 84, 0.8099614845938375) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow-y: auto;
+}
+
+.page::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.profile-picture {
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+.navbar {
+  width: 100%;
+  background: transparent;
+  opacity: 1;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.navbar div {
+  font-size: x-large;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  padding: 50px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.song {
+  width: 500px;
+  height: 100px;
+  margin: 10px;
+}
+
+.song-in-playlist {
+  display: flex;
+  flex-direction: row;
+}
+
+.song-image {
+  border-radius: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.song-details {
+}
+
+.top-things {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scrollable-container {
+  height: 1000 px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.horizontal-list {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: wrap;
+  overflow-x: auto;
+}
+
+.horizontal-list li {
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #525252;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+div {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  width: 80vw;
+}
