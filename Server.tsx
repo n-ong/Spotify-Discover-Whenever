@@ -12,8 +12,8 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import queryString from "query-string";
 
-var client_id = "1eb48eca446948db9f1b39a9ed8c977d"; // Your client id
-var client_secret = "30e1ba12485a45a29f8c14653e457069"; // Your secret
+var client_id = ""; // Your client id
+var client_secret = ""; // Your secret
 var redirect_uri = "http://localhost:8888/callback"; // Your redirect uri
 
 /**
