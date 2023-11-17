@@ -2,5 +2,7 @@
 
 To run this on http://localhost:5173/,
 
-1) Run '''npm run dev''' for the front end
-2) Run '''ts-node-esm Server.tsx''' in a separate terminal
+1) In one terminal:
+   $ npm run dev
+3) In a separate terminal:
+   $ ts-node-esm Server.tsx
